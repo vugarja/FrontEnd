@@ -1,0 +1,25 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// About
+#about{
+    .dont{
+        font-weight: 600;
+    }
+    ul{
+      list-style: none;
+      padding: 0px;
+      li{
+          font-size: $text-size*1.25;
+          padding: 3px 0px;
+          i{
+            padding-right: 10px;
+            color: $primary-color;
+          }
+          span{
+              opacity: 0.5;
+            }
+        }
+    }
+}

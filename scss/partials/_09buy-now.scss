@@ -1,0 +1,12 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Buy now
+#buy-now{
+    .buy{
+        h1{
+            color: white;
+        }
+    }
+}

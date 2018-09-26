@@ -1,0 +1,113 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+
+// Common
+body{
+    font-family: $primary-font;
+}
+
+.sp{
+    padding:60px 0px;
+}
+
+.row-title{
+    h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 36px;
+        padding: 15px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100px;
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+            top: 100%;
+            left: 42%;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 72px;
+            background-color: #0b60a9;
+            border: 1px solid #0b60a9;
+            top: 107%;
+            left: 44%;
+        }
+    }
+    p{
+        color: lighten($color: black, $amount: 50);
+        padding: 15px;
+        margin-top: 25px;
+    }
+}
+
+// To Top Button
+.to-top-button{
+    cursor: pointer;
+    i{
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 26px;
+        background: #0b60a9;
+        color: white;
+        right: 50px;
+        bottom: 10px;
+        z-index: 99999;
+        
+        @include setTransition(all,0.78s);
+        &:hover{
+            background: black;
+        }
+
+    }
+    
+}
+
+
+
+@import "partials/01header";
+@import "partials/02menu";
+@import "partials/03slider";
+@import "partials/04features";
+@import "partials/05template";
+@import "partials/06about";
+@import "partials/07services";
+@import "partials/08news";
+@import "partials/09buy-now";
+@import "partials/10team";
+@import "partials/11carousel";
+@import "partials/12upcoming";
+@import "partials/13counter";
+@import "partials/14choose";
+@import "partials/15message";
+@import "partials/16works";
+@import "partials/17plan";
+@import "partials/18hiring";
+@import "partials/19logos";
+@import "partials/20end";
+@import "partials/21footer";
+@import "partials/22about-main";
+@import "partials/_23single-portfolio";
+
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+

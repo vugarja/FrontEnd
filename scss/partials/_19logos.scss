@@ -1,0 +1,15 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Logos
+#logos{
+    ul{
+        padding: 0px;
+        list-style: none;
+    }
+        li{
+            display: inline;
+            padding: 20px 8px;
+        }
+}

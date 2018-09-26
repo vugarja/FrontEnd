@@ -1,0 +1,106 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Works
+#works{
+    ul{
+        list-style: none;
+        padding: 0px;
+        li{
+            cursor: pointer;
+            display: inline;
+            padding: 20px 10px;
+            margin-right: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            position: relative;
+            button{
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+                background-color: transparent;
+                border: 0px;
+                font-weight: 600;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                background-color: #0b60a9;
+                width: 94%;
+                height: 3px;
+                display: none;
+                left: 4px;
+                bottom: 0px;
+            }
+            &:hover button{
+                color: $primary-color
+            }
+            &:hover::after{
+                display:block;
+            }
+            &:visited{
+                color: red;
+            }
+        }
+    }
+    .grid{
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        img{
+            width: 340px;
+            margin-top: 10px;
+        }
+        .element-item{
+            position: relative;
+            @include setTransition(all, 0.7s);
+            &:hover .overlay{
+                display: block;
+            }
+            .overlay{
+                background-color: #0000007d;;
+                position: absolute;
+                width: 340px;
+                height: 256px;
+                left: 8px;
+                top: 10px;
+                display: none;
+                @include setTransition(all, 0.7s); 
+                a{
+                    text-decoration: none;
+                    color: black;
+                    margin-top: 65px;
+                    display: block;
+                    &:hover{
+                        color: black;
+                    }
+                    i{
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 100%;
+                        background-color: white;
+                    }
+                }
+                h4{
+                    cursor: pointer;
+                    color: white;
+                    @include setTransition(all,0.7s);
+                    padding: 10px 0px;
+                    margin-top: 2px;
+                    font-size: 20px;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                p{
+                    color: white;
+                }
+            }   
+        }
+    }
+}

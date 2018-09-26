@@ -1,0 +1,85 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Key features
+#features{
+    .card{
+        border: 0px;
+        margin-bottom: 50px;
+        width: 95%;
+        @include setTransition(all,0.7s);
+            &:hover{
+                transform: translateY(-20px);
+                box-shadow: 7px 10px 16px 1px #00000063 !important;
+            }
+        .card-body{
+            padding: 40px 0px;
+            a.icon{
+                display: block;
+                width: 100px;
+                height: 100px;
+                line-height: 125px;
+                background-color: lighten($color: black, $amount: 95);
+                border-radius: 100%;
+                position: relative;
+                @include setTransition(all,0.7s);
+                &:after{
+                    position: absolute;
+                    content: "";
+                    @include setTransition(all,0.7s);
+                    background-color: transparent;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100%;
+                    border: 3px solid #f2f2f2;
+                    right: -10px;
+                    top: -9px;
+                    display:none;
+                }
+                &:hover:after{
+                    display: block;
+                }
+                i{
+                    font-size: 50px;
+                    color: $primary-color;
+                }
+            }
+            h4{
+                margin-top: 30px;
+                padding: 10px;
+                cursor: pointer;
+                @include setTransition(all,0.3s);
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            p{
+                padding: 10px 20px;
+                opacity: 0.6;
+                font-size: $text-size*1.2;
+                position: relative;
+                
+
+            }
+            .card-link{
+                color: black;
+                font-size: $text-size*1.125;
+                @include setTransition(all,0.6s);
+                .fa-check{
+                    visibility: hidden;
+                }
+                &:hover{
+                    color: $primary-color;
+                    margin-left: 10px;
+                }
+                &:hover .fa-long-arrow-alt-right{
+                    display: none;
+                }
+                &:hover .fa-check{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

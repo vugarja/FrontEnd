@@ -1,0 +1,55 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Counter
+#counter{
+    background-image: url("../img/counter.jpg");
+    background-size: cover;
+    background-color: #000000b8;
+    background-blend-mode: darken;
+    h1{
+        color: white;
+        font-size: $title-size +1;
+        padding: 20px 0px;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            background-color: #0b60a9;
+            width: 90px;
+            left: 0px;
+            height: 2px;
+            bottom: -8px;
+        }
+    }
+    p{
+        margin: 10px 0px;
+        color: white;
+        font-size: 15px;
+        font-weight: 200;
+    }.count{
+        color: white;
+        color: white;
+        font-size: 36px;
+        font-weight: 300;
+       
+    }
+    i{
+        color: $primary-color;
+        margin-right: 10px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: $title-size*1.1;
+    }
+    
+    span{
+        color: white;
+        display: block;
+        margin-left: 50px;
+        margin-top: 2px;
+        font-weight: 500;
+        font-size: $text-size*1.2;
+    }
+}

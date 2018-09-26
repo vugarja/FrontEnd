@@ -1,0 +1,47 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Services
+#services{
+    background-image: url("../img/services.jpg");
+    background-size: cover;
+    a{
+        i{  
+            font-size: 45px;
+            width: 90px;
+            height: 90px;
+            line-height: 97px;
+            background-color: white;
+            border-radius: 100%;
+            text-align: center;
+            color: $primary-color;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            background-color: transparent;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+            border: 3px solid #007bff0d;
+            right: 13px;
+            top: -9px;
+            display: none;
+        }
+        &:hover:after{
+            display: block;
+        }
+    }
+    h5{
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    p{
+        font-size: $text-size*1.2;
+        opacity: 0.5;
+    }
+}

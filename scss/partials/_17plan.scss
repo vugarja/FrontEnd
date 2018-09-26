@@ -1,0 +1,144 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Plans
+#plan{
+    .plans{
+        height:580px;
+        .free, .team{
+            background-color: #00000003 !important;
+            .card-title{
+                font-size: 23px;
+                padding: 20px 10px;
+                background-color: #0000000a !important;
+                margin: 0px;
+            }
+            .card-body{
+                background-color: white;
+                .price{
+                    position: relative;
+                    width: 100px;
+                    text-align: center;
+                    &:before{    
+                        position: absolute;
+                        content: "$";
+                        top: 0px;
+                        left: -10px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        }      
+                    &:after{
+                        content: "/ Yearly";
+                        position: absolute;
+                        bottom: 16px;
+                        right: -43px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        }
+                    h1{
+                        font-size: 75px;
+                        font-weight: 700;
+                        text-align: center;
+                        position: relative;
+                        }
+                }
+                ul{ 
+                    padding: 20px;
+                    list-style: none;
+                    li{
+                        color: black;
+                        line-height: 32px;
+                        i{
+                            width: 15px;
+                            margin-right: 20px;
+                            font-size: 9px;
+                            height: 15px;
+                            line-height: 15px;
+                            text-align: center;
+                            color: white;
+                            background-color: #0b60a9;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .premium{
+            height:580px;
+            .card-title{
+                background-color: $primary-color;
+                color: white;
+                font-size: 23px;
+                padding: 20px 10px;
+                position: relative;
+                &::after{
+                    content: "Popular";
+                    position: absolute;
+                    right: -42px;
+                    top: 15px;
+                    color:black;
+                    font-size: 17px;
+                    font-weight: 600;
+                    transform: rotate(45deg);
+                    background-color: transparent;
+                    border-bottom: 50px solid #d8d8d8;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    height: 20px;
+                    line-height: 50px;
+                }
+            }
+            .card-body{
+                .price{
+                    position: relative;
+                    width: 100px;
+                    text-align: center;
+                    &:before{    
+                        position: absolute;
+                        content: "$";
+                        top: 0px;
+                        left: -10px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        }      
+                    &:after{
+                        content: "/ Yearly";
+                        position: absolute;
+                        bottom: 16px;
+                        right: -43px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        }
+                    h1{
+                        font-size: 75px;
+                        font-weight: 700;
+                        text-align: center;
+                        position: relative;
+                        }
+                }
+                ul{ 
+                    padding: 20px;
+                    list-style: none;
+                    li{
+                        color: black;
+                        line-height: 32px;
+                        i{
+                            width: 15px;
+                            margin-right: 20px;
+                            font-size: 9px;
+                            height: 15px;
+                            line-height: 15px;
+                            text-align: center;
+                            color: white;
+                            background-color: #0b60a9;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

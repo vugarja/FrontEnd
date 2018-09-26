@@ -1,0 +1,17 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Choose
+#choose{
+    p{
+        font-weight: 500;
+        font-size: $text-size*1.2;
+        line-height: 2;
+        opacity: 0.5;
+    }
+    h5{
+        font-weight: 600;
+        font-size: 17px;
+    }
+}

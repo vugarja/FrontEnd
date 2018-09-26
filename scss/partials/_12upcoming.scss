@@ -1,0 +1,125 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Upcoming
+#upcoming{
+    .dates{
+        h4{
+            font-weight: 600;
+            font-size: $text-size*2;
+            padding: 20px 0px;
+            border-bottom: 1px solid darken(white,10);
+            i{
+                margin-right: 15px;
+            }
+        }
+        h6{
+            background-color: darken($color: white, $amount: 10);
+            font-style: italic;
+            text-align: center;
+            line-height: 25px;
+            font-weight: 400;
+        }
+        h3{
+            font-size: $text-size*3.5;
+            text-align: center;
+            opacity: 0.5;
+        }
+        p{
+            font-size: $text-size*1.2;
+            opacity: 0.5;
+            line-height: 15px;
+        }
+    }
+    .news{
+        h4{
+            font-weight: 600;
+            font-size: $text-size*2;
+            padding: 20px 0px;
+            border-bottom: 1px solid darken(white,10);
+            i{
+                margin-right: 15px;
+            }
+        }
+        .card{
+            border: 0px;
+            border-radius: 0px;
+            overflow: hidden;
+            @include setTransition(all,0.7s);
+            &:hover{
+                transform: translateY(-20px);
+                box-shadow: 7px 10px 16px 1px #00000063 !important;
+            }
+            img{
+                border-radius: 0px;
+                cursor: pointer;
+                @include setTransition(all,0.7s);
+                position: relative;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                    opacity: 0.8;
+    
+                }
+                
+            }
+            .card-body{
+                padding: 40px;
+                .date{
+                    font-size: $text-size*1.15;
+                    opacity: 0.7;
+                    i, span{
+                        margin-right: 5px;
+                    }
+                }
+                h5{
+                    cursor: pointer;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                .card-title{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: $text-size*1.25;
+                    opacity: 0.6;
+                }
+                .card-link{
+                    color: black;
+                    font-size: $text-size*1.125;
+                    font-weight: 600;
+                    @include setTransition(all,0.7s);
+                    &:hover{
+                        color: $primary-color;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .owl-carousel{
+        position: relative;
+        .owl-nav{
+            position: absolute;
+            top: -80px;
+            right: -20px;
+            button{
+                width: 40px;
+                height: 40px;
+                background: #e6e6e6;
+                color: black;
+                margin-right: 20px;
+                outline: none;
+                font-size: 30px;
+                line-height: 40px;
+                @include setTransition(all, 0.7s);
+                &:hover{
+                    background: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+    }
+}

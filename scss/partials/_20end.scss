@@ -1,0 +1,228 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// End
+#end{
+    .final{
+        .about{
+            h4{
+                position: relative;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: 0px;
+                    bottom: -20px;
+                    background-color: white;
+                    width: 50px;
+                    height: 2px;
+                }
+            
+            }
+            p{
+                color: white;
+                opacity: 0.5;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+        .news{
+            h4{
+                position: relative;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: 0px;
+                    bottom: -20px;
+                    background-color: white;
+                    width: 50px;
+                    height: 2px;
+                }
+            }
+            ul{
+                color: white;
+                list-style: none;
+                padding: 0px;
+                li{
+                    padding: 8px 0px;
+                    &:first-child{
+                        padding-top: 0px;
+                    }
+                    h5{
+                        margin: 0px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        opacity: 0.6;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    span{
+                        font-style: italic;
+                        font-size: 14px;
+                        color: white;
+                        opacity: 0.4;
+    
+                    }
+                }   
+                
+            }
+        }
+        .contact{
+            
+            h4{
+                position: relative;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: 0px;
+                    bottom: -20px;
+                    background-color: white;
+                    width: 50px;
+                    height: 2px;
+                }
+            
+            }
+            ul{
+                color: white;
+                list-style: none;
+                padding: 0px;
+                li{
+                    padding: 5px 0px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 300;
+                        font-size: 14px;
+                        opacity: 0.8;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    
+                    }
+                   
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 300;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .gallery{
+            h4{
+                position: relative;
+                color: white;
+                font-weight: 300;
+                font-size: 20px;
+                &:after{
+                    content:"";
+                    position: absolute;
+                    left: 0px;
+                    bottom: -20px;
+                    background-color: white;
+                    width: 50px;
+                    height: 2px;
+                }
+            
+            }
+            a{
+                position: relative;
+                &::before{
+                    width: 117px;
+                    height: 100%;
+                    position: absolute;
+                    content: "";
+                    background-color: #00000059;
+                    top: 0px;
+                    left: 0px;
+                    opacity: 0;
+                }
+                &:hover::before{
+                    opacity: 1;
+                }
+                img{
+                    width: 125px;
+                    height: 65px;
+                }
+            }
+            
+        }
+    }
+    .copyright{
+        height: 75px;
+       .menus{
+           padding: 0px;
+           list-style: none;
+           li{
+               display: inline;
+               a{
+                   text-decoration: none;
+                   color: white;
+                   opacity: 0.75;
+                   padding: 0px 8px;
+                   font-weight: 300;
+                   font-size: 15px;
+                   &:hover{
+                       color: $primary-color;
+                   }
+               }
+           }
+       }
+       .soc-links{
+        margin-right:20px;
+        list-style: none;
+        padding: 0px;
+           li{
+               cursor: pointer;
+               display: inline;
+               padding: 0px 7px;
+               i{
+                color: white;
+                opacity: 0.5;
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                border: 2px solid;
+                text-align: center;
+                border-radius: 100%;
+                @include setTransition(all,0.7s);
+                &:hover{
+                       opacity: 1;
+                       border: 0px;
+                   }
+                &.fa-facebook-f:hover{
+                    background-color: rgb(59, 89, 153);
+                }
+                &.fa-twitter:hover{
+                    background-color: rgb(85, 172, 238);
+                }
+                &.fa-linkedin-in:hover{
+                    background-color: rgb(0, 119, 181);
+                }
+                &.fa-instagram:hover{
+                    background-color: #517fa4;
+               }
+               &.fa-vimeo:hover{
+                background-color: #aad450;
+                }
+                &.fa-basketball-ball:hover{
+                    background-color: #ea4c89;
+                 }
+            }
+           }
+       }
+    }
+}

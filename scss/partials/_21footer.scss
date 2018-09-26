@@ -1,0 +1,19 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Footer
+footer{
+    background-color: black;
+    height: 50px;
+    p{
+        margin: 0px;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        opacity: 0.9;
+        span{
+            opacity: 0.7;
+        }
+    }
+}

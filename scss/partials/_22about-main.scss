@@ -1,0 +1,42 @@
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+#page-main{
+    background-image: url("../img/custom-header.jpg");
+    background-size: 100%;
+    background-position: cover;
+    width: 100%;
+    color: white;
+    background-color: $helper-color-1;
+    background-blend-mode: darken;
+    .info{
+        padding: 50px 0px;
+        .text{
+            a{
+                font-weight: 200;
+                font-size: 15px;
+                opacity: 0.8;
+                text-decoration: none;
+                color: white;
+                border-bottom: 1px solid white;
+                &:hover{
+                    opacity: 1;
+                    color: white;
+                }
+                border-bottom: 1px solid white;
+            }
+            i{
+                padding: 0px 10px;
+                margin-top: 4px;
+    
+            }
+            h5{
+                font-size: 15px;
+                font-weight: 200;
+                margin-top: 4px;
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,21 @@
+
+@import "partials/variables";
+@import "partials/mixin";
+@import "partials/components";
+
+// Header
+header{
+    .info{ 
+        font-size: $text-size;
+        h6,a{
+            font-size: $text-size*1.2;
+        }
+        i{
+            color: $primary-color;
+            font-size: $title-size *1.2;
+        }
+        p,a{
+            font-size: $text-size*1.1
+        }
+    }
+}
